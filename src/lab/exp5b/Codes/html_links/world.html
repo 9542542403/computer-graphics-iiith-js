@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hierachical Transformations: 3D Articulated Arm</title>
+
+		 <link rel = "stylesheet" type = "text/css" href = "../css/worldStyle.css" />
+	
+	</head>
+
+	<body>
+		<script src="../../Libraries/three.js"></script>
+		<script src="../../Libraries/three.min.js"></script>
+		<script src="../../Libraries/OrbitControls.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+
+
+		<div class="mainBox">
+			<div class="innerBox">
+				<p><b>Hierarchical Transformations</b><br>The Set-up: Articulated Arm<br><br>
+				This experiment is designed to teach a hierarchical transformation model.<br>
+				The world represented orderly as shown below. Each node is has 3 sections: Draw, Active and Transition.<br><br>Transition is the set of transformations applied to the position of structure w.r.t the current position / location of the structure.
+				<br><br>All the features shown in display and world can be edited by clicking on them. Any changes to the tree are reflected on the display and vice-versa.
+				<br><br>We constructed a hierarchical articulated arm model where each node/part follows a series of transformations from the root node to its current position. The top-most object in this hierarchy is the Shoulder followed by Elbow, Forearm, Wrist and Palm.</p>
+			</div>
+			<div class="label">
+				<p class="wfNote">Some figures are coloured <b>Red</b> for differentiating them. The <b>Draw</b> box must be checked for using <b>Active</b> box and <b>Transiton</b> feature. After entering <b>tansition values</b> click on <b>Submit</b></p>
+				<table>
+				<tr>
+					<th>Name</th>
+					<th>Draw feature</th>
+					<th>Active feature</th>
+					<th>X-units</th>
+					<th>Y-units</th>
+					<th>Z-untis</th>
+				</tr>
+				<tr>
+					<td>Palm</td>
+					<td><input type="checkbox" id="palmDraw" onclick="drawPalm()"/>Draw</td>
+					<td><input type="checkbox" id="palmActive" onclick="activePalm()"/>Active</td>
+					<td><input type="Number" id="palmX" class="tbox" value="0" /></td>
+					<td><input type="Number" id="palmY" class="tbox" value="0" /></td>
+					<td><input type="Number" id="palmZ" class="tbox" value="0" /></td>
+				</tr>
+				<tr>
+					<td>Wrist</td>
+					<td><input type="checkbox" id="wristDraw" onclick="drawWrist()"/>Draw</td>
+					<td><input type="checkbox" id="wristActive" onclick="activePalm()"/>Active</td>
+					<td><input type="Number" id="wristX" class="tbox" value="0" /></td>
+					<td><input type="Number" id="wristY" class="tbox" value="0" /></td>
+					<td><input type="Number" id="wristZ" class="tbox" value="0" /></td>
+				</tr>
+				<tr>
+					<td>Fore-arm</td>
+					<td><input type="checkbox" id="forearmDraw" onclick="drawForearm()"/>Draw</td>
+					<td><input type="checkbox" id="forearmActive" onclick="activeForearm()"/>Active</td>
+					<td><input type="Number" id="forearmX" class="tbox" value="0" /></td>
+					<td><input type="Number" id="forearmY" class="tbox" value="0" /></td>
+					<td><input type="Number" id="forearmZ" class="tbox" value="0" /></td>
+				</tr>
+				<tr>
+					<td>Elbow</td>
+					<td><input type="checkbox" id="elbowDraw" onclick="drawElbow()"/>Draw</td>
+					<td><input type="checkbox" id="elbowActive" onclick="activeForearm()"/>Active</td>
+					<td><input type="Number" id="elbowX" class="tbox" value="0" /></td>
+					<td><input type="Number" id="elbowY" class="tbox" value="0" /></td>
+					<td><input type="Number" id="elbowZ" class="tbox" value="0" /></td>
+				</tr>
+				<tr>
+					<td>Arm</td>
+					<td><input type="checkbox" id="armDraw" onclick="drawArm()"/>Draw</td>
+					<td><input type="checkbox" id="armActive" onclick="activeArm()"/>Active</td>
+					<td><input type="Number" id="armX" class="tbox" value="0" /></td>
+					<td><input type="Number" id="armY" class="tbox" value="0" /></td>
+					<td><input type="Number" id="armZ" class="tbox" value="0" /></td>
+				</tr>
+				<tr>
+					<td>Shoulder</td>
+					<td><input type="checkbox" id="shoulderDraw" onclick="drawShoulder()"/>Draw</td>
+					<td><input type="checkbox" id="shoulderActive" onclick="activeArm()"/>Active</td>
+					<td><input type="Number" id="shoulderX" class="tbox" value="0" /></td>
+					<td><input type="Number" id="shoulderY" class="tbox" value="0" /></td>
+					<td><input type="Number" id="shoulderZ" class="tbox" value="0" /></td>
+				</tr>
+				</table>
+				<center><button class="wf_button" onclick="wf_Transition()">Submit</button></center>
+			</div>
+			<div class="cameraForWorld" id="hideThis">
+				<input type="checkbox" id="2DCamera" onclick="camera2D()" checked="true"/>Show the simulation in 3D<br>
+			</div>
+			<script type="text/javascript">
+				document.getElementById('hideThis').style.display = "none";
+			</script>
+			<a href="world.html"><button id="world" class="w_Button">World</button></a>
+			<a href="display.html"><button id="display" class="d_Button">Display</button></a>
+			<a href="manual.html"><button class="m_Button">Manual</button></a>
+		</div>
+		
+		<script type="text/javascript"> world_drawXY(); world_lockV(); </script>
+		
+	</body>	
+</html>

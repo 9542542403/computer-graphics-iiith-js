@@ -1,0 +1,506 @@
+body {
+	background-color: rgba(0, 0, 0, 1);
+	padding: 8px 8px 8px 120px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+canvas {
+	border: 1px solid rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 225, 0.03);
+	padding: 7px;
+}
+
+#forFirstInputs, #forSecondInputs, #forThirdInputs, #forThirdDefaultInputs {
+	background-color: rgba(0, 74, 225, 0.09);
+	border: 1px solid rgba(0, 74, 225, 1);
+}
+
+.frameCanvasStyle {
+	float: left;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#forFirstInputs, #forSecondInputs, #forThirdInputs, #forThirdDefaultInputs {
+	width: 33%;
+	height: 30%;
+	float: left;
+	margin: 0px 10px 5px 20px;
+	padding: 15px;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.heading {
+	color: rgba(0, 74, 225, 1);
+	text-align: left;
+	font-weight: normal;
+	margin: 0px 0px 25px 300px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.dimensionInput{
+	width: 50px;
+	height: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.enterButton {
+	font-weight: bold;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 210px;
+	height: 30px;
+	font-size: 13px;
+	margin-right: 90px;
+}
+
+.backButton {
+	font-weight: bold;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 100px;
+	height: 30px;
+	font-size: 13px;
+}
+
+.startButton {
+	font-weight: bold;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 100px;
+	height: 30px;
+	font-size: 13px;
+	margin-right: 1px;
+}
+
+.defaultButton {
+	font-weight: bold;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 210px;
+	height: 30px;
+	font-size: 13px;
+	margin: 20px 0px 5px 0px;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.coordinatesInput {
+	width: 40px;
+	height: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.nextButton, .previousButton {
+	font-weight: bold;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 165px;
+	height: 30px;
+	font-size: 13px;
+}
+
+.previousButton {
+	margin-left: 8px;
+}
+
+#pointDecision, #details, #lineEquation {
+	float: left;
+	width: 100%;
+	margin: 0px;
+}
+
+#details {
+	margin-top: 9px;
+	margin-bottom: 12px;
+}
+
+#lineEquation, #extraDetails1, #extraDetails2 {
+	margin-top: 3px;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#lineEquation {
+	margin-bottom: 8px;
+}
+
+#extraDetails2 {
+	margin-bottom: 20px;
+}
+
+
+#pointDecisionDef, #detailsDef, #lineEquationDef {
+	float: left;
+	width: 100%;
+	margin: 0px;
+}
+
+#detailsDef {
+	margin-top: 9px;
+	margin-bottom: 12px;
+}
+
+#lineEquationDef, #extraDetails1Def, #extraDetails2Def {
+	margin-top: 3px;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#lineEquationDef {
+	margin-bottom: 8px;
+}
+
+#extraDetails2Def {
+	margin-bottom: 20px;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.designButton {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 12px 0px 0px 0px;
+	color: rgba(0, 74, 225, 1);
+}
+
+#toKeepStatic {
+	bottom: 300px;
+	position: fixed;
+	top: 300px;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+	canvas {
+		width: 40%;
+		height: width;
+	}
+
+	h2 {
+		font-size: 8px;
+	}
+
+	div {
+		font-size: 7px;
+	}
+
+	.enterButton, .nextButton, .previousButton, .backButton, .defaultButton, .startButton, .designButton {
+		font-size: 7px;
+		width: 45px;
+	}
+
+	#lineEquationDef, #extraDetails1Def, #extraDetails2Def, #pointDecisionDef, #detailsDef, #lineEquationDef {
+		font-size: 6px;
+	}
+
+	#pointDecision, #details, #lineEquation {
+		font-size: 6px;
+	}
+
+	.heading {
+		margin-left: 60px;
+	}
+
+	.enterButton {
+		width: 110px;
+		height: 19px;
+	}
+
+	.backButton {
+		width: 60px;
+		height: 19px;
+	}
+
+	.startButton, .designButton {
+		width: 60px;
+		height: 19px;
+	}
+
+	.defaultButton {
+		width: 110px;
+		height: 19px;
+	}
+
+	.coordinatesInput {
+		width: 23px;
+		height: 9px;
+	}
+
+	.nextButton, .previousButton {
+		width: 80px;
+		height: 19px;
+	}
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+	canvas {
+		width: 40%;
+		height: width;
+	}
+
+	h2 {
+		font-size: 12px;
+	}
+
+	div {
+		font-size: 7px;
+	}
+
+	.enterButton, .nextButton, .previousButton, .backButton, .defaultButton, .startButton, .designButton {
+		font-size: 7px;
+	}
+
+	#lineEquationDef, #extraDetails1Def, #extraDetails2Def, #pointDecisionDef, #detailsDef, #lineEquationDef {
+		font-size: 6px;
+	}
+
+	#pointDecision, #details, #lineEquation {
+		font-size: 6px;
+	}
+
+	.heading {
+		margin-left: 75px;
+	}
+	
+	.enterButton {
+		width: 110px;
+		height: 19px;
+	}
+
+	.backButton {
+		width: 60px;
+		height: 19px;
+	}
+
+	.startButton, .designButton {
+		width: 60px;
+		height: 19px;
+	}
+
+	.defaultButton {
+		width: 110px;
+		height: 19px;
+	}
+
+	.coordinatesInput {
+		width: 23px;
+		height: 9px;
+	}
+
+	.nextButton, .previousButton {
+		width: 80px;
+		height: 19px;
+	}
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+	canvas {
+		width: 40%;
+		height: width;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	div {
+		font-size: 9px;
+	}
+
+	.enterButton, .nextButton, .previousButton, .backButton, .defaultButton, .startButton, .designButton {
+		font-size: 9px;
+		width: 75px;
+	}
+
+	#lineEquationDef, #extraDetails1Def, #extraDetails2Def, #pointDecisionDef, #detailsDef, #lineEquationDef {
+		font-size: 8px;
+	}
+
+	#pointDecision, #details, #lineEquation {
+		font-size: 8px;
+	}
+
+	.heading {
+		margin-left: 120px;
+	}
+
+	.enterButton {
+		width: 160px;
+		height: 23px;
+	}
+
+	.backButton {
+		width: 80px;
+		height: 23px;
+	}
+
+	.startButton, .designButton {
+		width: 80px;
+		height: 23px;
+	}
+
+	.defaultButton {
+		width: 180px;
+		height: 23px;
+	}
+
+	.coordinatesInput {
+		width: 28px;
+		height: 10px;
+	}
+
+	.nextButton, .previousButton {
+		width: 100px;
+		height: 23px;
+	}
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+	canvas {
+		width: 40%;
+		height: width;
+	}
+
+	h2 {
+		font-size: 21px;
+	}
+
+	div {
+		font-size: 11px;
+	}
+
+	.enterButton, .nextButton, .previousButton, .backButton, .defaultButton, .startButton, .designButton {
+		font-size: 11px;
+	}
+
+	#lineEquationDef, #extraDetails1Def, #extraDetails2Def, #pointDecisionDef, #detailsDef, #lineEquationDef {
+		font-size: 10px;
+	}
+
+	#pointDecision, #details, #lineEquation {
+		font-size: 10px;
+	}
+
+	.heading {
+		margin-left: 330px;
+	}
+
+	.enterButton {
+		width: 210px;
+		height: 30px;
+	}
+
+	.backButton {
+		width: 100px;
+		height: 30px;
+	}
+
+	.startButton, .designButton {
+		width: 100px;
+		height: 30px;
+	}
+
+	.defaultButton {
+		width: 210px;
+		height: 30px;
+	}
+
+	.coordinatesInput {
+		width: 40px;
+		height: 14px;
+	}
+
+	.nextButton, .previousButton {
+		width: 165px;
+		height: 30px;
+	}
+
+}    
+
+/* Good Resolution */
+@media only screen and (min-width: 1300px) {
+	canvas {
+		width: 40%;
+		height: width;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	div {
+		font-size: 13px;
+	}
+
+	.enterButton {
+		width: 210px;
+		height: 30px;
+	}
+
+	.backButton {
+		width: 100px;
+		height: 30px;
+	}
+
+	.startButton, .designButton {
+		width: 100px;
+		height: 30px;
+	}
+
+	.defaultButton {
+		width: 210px;
+		height: 30px;
+	}
+
+	.coordinatesInput {
+		width: 40px;
+		height: 14px;
+	}
+
+	.nextButton, .previousButton {
+		width: 165px;
+		height: 30px;
+	}
+
+	.enterButton, .nextButton, .previousButton, .backButton, .defaultButton, .startButton, .designButton {
+		font-size: 13px;
+	}
+
+	#lineEquationDef, #extraDetails1Def, #extraDetails2Def, #pointDecisionDef, #detailsDef, #lineEquationDef {
+		font-size: 12px;
+	}
+
+	#pointDecision, #details, #lineEquation {
+		font-size: 12px;
+	}
+
+	.heading {
+		margin-left: 345px;
+	}
+
+}    

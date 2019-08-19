@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Change the backgorund Color of Canvas*/
+#myCanvas{
+	background: lightblue;
+  
+}
+/*Change the backgorund Color of Left Half*/ 
+#column1 {
+  background: lightyellow;
+}
+
+/*Button Designing*/
+#designbutton {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+
+#x1s{
+  text-align: center;
+}
+
+#x2s{
+  text-align: center;
+}
+#y1s{
+  text-align: center;
+}
+#y2s{
+  text-align: center;
+}
+
+#polyside{
+  text-align: center;
+}
+
+#heading{
+   text-align: center;
+}
+
+#print0{
+  background: white;
+}
+
+#print1{
+  background: white;
+}
+#print2{
+  background: white;
+}
+#print3{
+  background: white;
+}
+#print4{
+  background: white;
+}
+#print5{
+  background: white;
+}
+#print6{
+  background: white;
+}
+#print7{
+  color: green;
+  font-size: 7;
+  background: white;
+}
+#print8{
+  color: green;
+  background: white;
+}
+#print9{
+  color: green;
+  background: white;
+}

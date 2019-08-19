@@ -1,0 +1,98 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: rgba(82, 97, 255, 1);
+}
+
+.container {
+     width: auto;
+     padding: 15px;;
+     margin: 5px;
+     overflow: auto;
+}
+
+#TaskTitle {
+    color: rgba(89, 46, 255, 1);
+}
+
+#displayResult{
+    font-size: 15px;
+    width: auto;
+    padding: 0;
+    margin:0;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.quiz-contents{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin:0;
+}
+
+#instructions{
+    padding: 18px;
+    text-align: left;
+    background-color: white;
+    margin-top: 0;
+    font-size: 21px;
+    color: rgba(89, 46, 255, 1);
+}
+
+.QuizHeader{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    color: black;
+    background-color: white;
+}
+
+#result{
+    text-align: center;
+    width: auto;
+    height: 45px;
+    padding: 5px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.question{
+    /* background-color: antiquewhite; */
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.answer{
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttonDecor{
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: blue;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px;
+    width: 115px;
+}
+
+.buttonDecor:hover{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.hide{
+    display: none;
+}

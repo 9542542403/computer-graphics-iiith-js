@@ -1,0 +1,81 @@
+{
+    "artciles": [
+        {
+            "q" : "The Cartesian slope-intercept equation for a straight line is ( slope = m, y-intercept = c ) ?",
+            "opt1" : "y = mx + c",
+            "opt2" : "y = cx + m",
+            "opt3" : "x = my - c",
+            "answer" : "y = mx + c"
+        },
+        {
+            "q" : " For lines with slope magnitude |m|<1, then x can be ?",
+            "opt1" : "A set corresponding vertical deflection",
+            "opt2" : "A set proportional to a small horizontal deflection voltage",
+            "opt3" : "A set undefined values",
+            "answer" : "A set proportional to a small horizontal deflection voltage"
+        },
+        {
+            "q" : "Expansion of line DDA algorithm is ?",
+            "opt1" : "Direct differential analyzer",
+            "opt2" : "Digital differential analyzer",
+            "opt3" : "Data differential analyzer",
+            "answer" : "Digital differential analyzer"
+        },
+        {
+            "q" : "The disadvantage of line DDA is ?",
+            "opt1" : "Faster",
+            "opt2" : "No Accuracy",
+            "opt3" : "Time consuming",
+            "answer" : "Time consuming"
+        },
+        {
+            "q" : "An accurate and efficient raster line-generating algorithm is ?",
+            "opt1" : "DDA algorithm",
+            "opt2" : "Mid-point algorithm",
+            "opt3" : "Bresenham’s line algorithm",
+            "answer" : "Bresenham’s line algorithm"
+        },
+        {
+            "q" : "The algorithm which uses multiple processors to calculate pixel positions is ?",
+            "opt1" : "Parallel line algorithm",
+            "opt2" : "Bresenham’s line algorithm",
+            "opt3" : "Midpoint algorithm",
+            "answer" : "Parallel line algorithm"
+        },
+        {
+            "q" : "Which is the best line algorithm to balance the processing load among the processers ?",
+            "opt1" : "Position Bresenham’s line algorithm",
+            "opt2" : "DDA line algorithm",
+            "opt3" : "Parallel line algorithm",
+            "answer" : "Parallel line algorithm"
+        },
+        {
+           "q" : "Which algorithm is a faster method for calculating pixel positions ?",
+            "opt1" : "DDA line algorithm",
+            "opt2" : "Midpoint algorithm",
+            "opt3" : "Parallel line algorithm",
+            "answer" : "DDA line algorithm"
+        },
+        {
+            "q" : "If we want to recolor an area that is not defined within a single color boundary is known as ?",
+            "opt1" : "Boundary-fill algorithm",
+            "opt2" : "Flood-fill algorithm",
+            "opt3" : "Parallel curve algorithm",
+            "answer" : "Flood-fill algorithm"
+        },
+        {
+            "q" : " Coordinate references in the polyline function are stated as ?",
+            "opt1" : "Relative coordinate values",
+            "opt2" : "Absolute coordinate values",
+            "opt3" : "Real coordinate values",
+            "answer" : "Absolute coordinate values"
+        },
+        {
+            "q": "Which is defined as set of points such that the sum of the distances is same for all points ?",
+            "opt1": "Ellipses",
+            "opt2": "Lines",
+            "opt3": "Circles",
+            "answer": "Ellipses"
+        }
+    ]
+}

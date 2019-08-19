@@ -1,0 +1,67 @@
+{
+    "artciles": [
+        {
+            "q" : "We translate a two-dimensional point by adding ?",
+            "opt1" : "Translation distances",
+            "opt2" : "Translation difference",
+            "opt3" : "X and Y",
+            "answer" : "Translation distances"
+        },
+        {
+            "q" : "In translation, a point (x, y) can move to the new position (x’, y’) by using the equation ?",
+            "opt1" : "x’=x+dx and y’=y+dx",
+			"opt2" : "x’=x+dx and y’=y+dy",
+ 			"opt3" : "X’=x+dy and Y’=y+dx",
+            "answer" : "x’=x+dx and y’=y+dy"
+        },
+        {
+            "q" : "Which is a rigid body transformation that moves objects without deformation ?",
+            "opt1" : "Rotation",
+			"opt2" : "Scaling",
+			"opt3" : "Translation",
+            "answer" : "Translation"
+        },
+        {
+            "q" : "The basic geometric transformations are ?",
+            "opt1" : "Rotation",
+			"opt2" : "Translation",
+			"opt3" : "Both",
+            "answer" : "Both"
+        },
+        {
+            "q" : " Which of the co-ordinate represents Z co-ordinate in (6,8,9) ?",
+            "opt1" : "6",
+			"opt2" : "9",
+			"opt3" : "0",
+            "answer" : "9"
+        },
+        {
+            "q" : " Which of the co-ordinate represents X co-ordinate in (11,0,6)? ?",
+            "opt1" : "0",
+			"opt2" : "5",
+			"opt3" : "11",
+            "answer" : "11"
+        },
+        {
+            "q" : "Relation between x, y and z at co-ordinate (4, -2, 1) ?",
+            "opt1" : "x + y = z + 1",
+			"opt2" : "z = x + y",
+			"opt3" : "x*y = z - 6",
+            "answer" : "x + y = z + 1"
+        },
+        {
+            "q" : "Library mostly used for 3D graphics in JavaScript ?",
+            "opt1" : "ThreeJs",
+			"opt2" : "jQuery",
+			"opt3" : "Parsley",
+            "answer" : "ThreeJs"
+        },
+        {
+            "q" : "A translation is applied to an object by ?",
+            "opt1" : "Repositioning it along with straight line path",
+			"opt2" : "Repositioning it along with circular path",
+			"opt3" : "Inverting it along any direction",
+            "answer" : "Repositioning it along with straight line path"
+        },
+    ]
+}

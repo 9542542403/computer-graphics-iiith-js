@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">	
+		<title>Hierachical Transformations: 3D Articulated Arm</title>
+
+		<link rel = "stylesheet" type = "text/css" href = "../css/worldStyle.css" />
+	
+	</head>
+
+	<body>
+		<script src="../../Libraries/three.js"></script>
+		<script src="../../Libraries/three.min.js"></script>
+		<script src="../../Libraries/OrbitControls.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+
+		<div class="mainBox">
+			<span>3D Articulated Arm</span>
+			<div class="noteBox2">
+				<p>Use the mouse and arrow keys and observe the changes in the screen. Refersh the page (F5), if you observe any random orientation of content. Read the Manual before getting started.</p>
+			</div>
+			<div class="displayFeatures">
+				<input type="checkbox" id="lockVertices" onclick="lockV()" checked="true"/>Lock vertices in the screen<br><br>
+				<script type="text/javascript"> lockV(); </script>
+				<input type="checkbox" id="xyAxis" onclick="drawXY()" checked="true"/>Draw XY grid in the screen<br><br>
+				<script type="text/javascript"> drawXY(); </script>
+				<input type="checkbox" id="yzAxis" onclick="drawYZ()"/>Draw YZ grid in the screen<br><br>
+				<input type="checkbox" id="zxAxis" onclick="drawZX()" />Draw ZX grid in the screen<br><br>
+				<input type="checkbox" id="2DCamera" onclick="camera2D()" checked="true"/>Show the simulation in 3D<br><br>
+				<input type="checkbox" id="animation" onclick="startAnimation()" checked="true"/>Show Animation structure
+				<br><br>
+			</div>
+			<div class="innerTransformBox">
+				<p>Enter the co-ordinates in (x, y, z) here for changing the position/location of the Arm w.r.t the grid and axes</p> 
+					X co-ordinate:<input type="number" id="xco" class="xBox" value="0" /><br><br>
+					Y co-ordinate:<input type="number" id="yco" class="yBox" value="0" /><br><br>
+					Z co-ordinate:<input type="number" id="zco" class="zBox" value="0" /><br><br>
+					<button class="t_Button" onclick="startTransistion()">Submit</button>
+			</div>
+			<a href="world.html"><button id="world" class="w_Button">World</button></a>
+			<a href="display.html"><button id="display" class="d_Button">Display</button></a>
+			<a href="manual.html"><button class="m_Button">Manual</button></a>
+		</div>
+		
+	</body>	
+</html>

@@ -1,0 +1,135 @@
+body {
+	color: black;
+}
+
+.startBody {
+	background-color: rgba(167, 98, 255, 0.9);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 8% 24% 8% 24%;
+	margin: 0%;
+	border: 0px;
+}
+
+.startBox {
+	text-align: center;
+	padding: 20px;
+	background-color: #EAFFE3;
+	border: 4px solid rgba(3, 213, 0, 0.8);
+	position: relative;
+}
+
+.startButton {
+	margin: 20px 10px 10px 10px;
+	font-size: 14px;
+	padding: 6px;
+	color: green;
+	width: 110px;
+	height: 40px;
+}
+
+.manualButton {
+	margin: 10px;
+	font-size: 14px;
+	color: green;
+	padding: 4px;
+	width: 110px;
+	height: 40px;
+}
+
+.noteBox {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	margin-top: 30px;
+}
+
+.manualBox {
+	margin: 0% 5% 3% 5%;
+	padding: 6px 10px 3px 10px;
+	background-color: rgba(167, 98, 255, 0.9);
+	color: white;
+	text-shadow: 3px 3px 10px #6124FF;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.manualContent {
+	padding: 3px 13px 3px 13px;
+	border: 3px solid rgba(3, 213, 0, 0.8);
+	color: green;
+	background-color: white;
+	margin-top: 6px;
+	font-size: 17px;
+	text-shadow: 0px 0px white;
+}
+
+p, ul {
+	color: green;
+	text-shadow: 0px 0px white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.nextButton {
+	color: #771AFD;
+	font-size: 15px;
+	float: right;
+	margin-top: 9px;
+	margin-bottom: 14px;
+	margin-right: 10%;
+	height: 35px;
+	width: 120px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.previousButton {
+	color: #771AFD;
+	font-size: 15px;
+	float: left;
+	margin-top: 9px;
+	margin-left: 10%;
+	margin-bottom: 14px;
+	height: 35px;
+	width: 120px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+@media only screen and (min-width: 300px) {
+	.manualContent {
+		font-size: 2px;
+	}
+
+	p, ul {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.manualContent {
+		font-size: 10px;
+	}
+
+	p, ul {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.manualContent {
+		font-size: 13px;
+	}
+
+	p, ul {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.manualContent {
+		font-size: 17px;
+	}
+
+	p, ul {
+		font-size: 17px;
+	}
+}
+

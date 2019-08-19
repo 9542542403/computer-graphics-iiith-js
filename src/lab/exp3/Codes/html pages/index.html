@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projections and cameras</title>
+  <link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
+</head>
+<script type="text/javascript" src="../../Libraries/three.js"></script>
+<script type="text/javascript" src="../../Libraries/stats.min.js"></script>
+<script type="text/javascript" src="../../Libraries/OrbitControls.js"></script>
+<script type="text/javascript" src="../js/debugParticles.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+<script>
+			function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+			  var dropdowns = document.getElementsByClassName("dropdown-content");
+			  var i;
+			  for (i = 0; i < dropdowns.length; i++) {
+			    var openDropdown = dropdowns[i];
+			    if (openDropdown.classList.contains('show')) {
+			      openDropdown.classList.remove('show');
+			    }
+			  }
+			}
+			}
+		</script>
+
+<body onload="initialize()">
+<div class="split right">
+<div class="centered">
+	<center>
+      <div class="dropdown">
+        <p><b><i>Select the type of camera</i></b></p>
+        <p><i>[Click the button for dropdown]</i></p>
+        <button onclick="myFunction()" class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;Camera&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a target="blank" onClick="javascript: setTimeout(window.close, 1);" href="index.html">Perspective[with view]</a>
+          <a target="blank" onClick="javascript: setTimeout(window.close, 1);" href="index_pers.html">Perspective</a>
+          <a target="blank" onClick="javascript: setTimeout(window.close, 1);" href="index_ortho_cuboid.html">Orthographic[with view]</a>
+          <a target="blank" onClick="javascript: setTimeout(window.close, 1);" href="index_ortho.html">Orthographic</a>
+        </div>
+    </div>
+	</center>
+</div>
+
+<div class="non">
+	<p><b><i> a.Refersh the page (F5), if you observe any random orientation of content</br>
+	 b.Use the mouse to observe the 3D structure in different angles</i></b></p>
+	 <center><a href="../home_new.html"><button id="world" class="d_Button"><b><i>Home</i></b></button></a></center>
+</div>
+
+
+
+ <div class="features">
+	<p><b><i>Select grids&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></b></p>
+	<input type="checkbox" id="xyAxis" onclick="drawXY()"/>Draw XY grid &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+	<script type="text/javascript"> drawXY(); </script>
+	<input type="checkbox" id="yzAxis" onclick="drawYZ()"/>Draw YZ grid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+	<input type="checkbox" id="zxAxis" onclick="drawZX()" />Draw ZX grid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+	<input type="checkbox" id="2DCamera" onclick="camera2D()" checked="true"/>Show the simulation in 3D<br><br>
+ </div>
+	
+</body>
+</html>

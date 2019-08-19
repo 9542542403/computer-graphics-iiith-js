@@ -1,0 +1,329 @@
+/* CSS file for index.html file */
+body {
+	margin: 8px;
+	padding: 0px;
+	border: 0px;
+	background-color: rgba(167, 98, 255, 0.9);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: black;
+}
+
+html, body {
+	height: 94%;
+}
+
+.mainBox {
+	width: 32%;
+	height: 100%;
+	float: right;
+	text-align: center;
+	padding: 3px 8px 1px 8px;
+	border: 4px solid rgba(3, 213, 0, 1);
+	margin: 0%;
+	background-color: #F5FFF2;
+}
+
+.noteBox {
+	border: 2px solid rgba(255, 0, 0, 0.3);
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding: 5px 5px 5px 10px;
+	color: red;
+	text-align: left;
+	background-color: #F5FFF2;
+}
+
+.noteBox2 {
+	border: 1px solid red;
+	margin-top: 4px;
+	margin-bottom: 2px;
+	padding: 1px 5px 1px 8px;
+	color: red;
+	font-weight: bold;
+	text-align: left;
+	background-color: #F5FFF2;
+}
+
+.innerBox {
+	padding: 2px 6px 2px 7px;
+	border: 2px solid gray;
+	text-align: left;
+	margin-bottom: 8px;
+	margin-top: 4px;
+}
+
+.w_Button{
+	float: left;
+	margin-top: 3px;
+	width: 93px;
+	height: 28px;
+	font-weight: normal;
+	color: #771AFD;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.d_Button{
+	float: left;
+	margin-top: 3px;
+	margin-left: 5px;
+	width: 93px;
+	height: 28px;
+	font-weight: normal;
+	color: #771AFD;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.m_Button{
+	float: right;
+	margin-top: 3px;
+	width: 93px;
+	height: 28px;
+	font-weight: normal;
+	color: #771AFD;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.t_Button{
+	margin-top: 5px;
+	margin-right: 45px;
+	width: 120px;
+	height: 25px;
+	font-weight: normal;
+	color: green;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: 2px 0px 6px 10px;
+}
+
+.xBox, .yBox, .zBox {
+	margin: 2px;
+	width: 40px;
+	height: 16px;
+	border: 1px solid black;
+}
+
+.displayFeatures {
+	margin-top: 6px;
+	margin-bottom: 2px;
+	border: 1px solid blue;
+	color: blue;
+	padding: 10px;
+	text-align: center;
+	background-color: #F5FFF2;
+}
+
+.innerTransformBox{
+	border: 1px solid green;
+	padding: 2px 4px 4px 4px;
+	color: green;
+	font-weight: lighter;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: #F5FFF2;
+}
+
+
+.label {
+	padding: 1px 6px 2px 7px;
+	border: 2px solid rgba(0, 132, 242, 0.5);
+	text-align: left;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+table {
+	border: 1px solid;
+	text-align: center;
+	border-color: rgba(0, 132, 242, 0.5);
+}
+
+td, tr{
+	padding: 1px 1px 1px 1px;
+}
+
+.tbox {
+	width: 40px;
+	height: 10px;
+}
+
+.wfNote {
+	color: #0095CA;
+	margin-top: 4px;
+	border: 0px;
+	padding: 0px;
+}
+
+.wf_button {
+	font-weight: normal;
+	color: blue;
+	margin: 4px 0px 4px 0px;
+	width: 90px;
+	height: 25px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.cameraForWorld {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 300px) {
+	body {
+		font-size: 5px;
+	}
+
+	table {
+		font-size: 3px;
+	}
+
+	.w_Button{
+		width: 60px;
+		height: 13px;
+		font-size: 5px;
+	}
+
+	.d_Button{
+		width: 60px;
+		height: 13px;
+		font-size: 5px;
+	}
+
+	.m_Button{
+		width: 60px;
+		height: 13px;
+		font-size: 5px;
+	}
+
+	.t_Button{
+		width: 70px;
+		height: 12px;
+		font-size: 5px;
+	}
+
+	.xBox, .yBox, .zBox {
+		width: 24px;
+		height: 9px;
+		font-size: 5px;
+	}
+
+
+	.wf_button {
+		width: 58px;
+		height: 16px;
+		font-size: 5px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	body {
+		font-size: 6px;
+	}
+
+	table {
+		font-size: 4px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 10px;
+	}
+
+	table {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		font-size: 9px;
+	}
+
+	table {
+		font-size: 9px;
+	}
+
+	.w_Button{
+		width: 82px;
+		height: 23px;
+		font-size: 9px;
+	}
+
+	.d_Button{
+		width: 82px;
+		height: 23px;
+		font-size: 9px;
+	}
+
+	.m_Button{
+		width: 82px;
+		height: 23px;
+		font-size: 9px;
+	}
+
+	.t_Button{
+		width: 100px;
+		height: 20px;
+		font-size: 9px;
+	}
+
+	.xBox, .yBox, .zBox {
+		width: 32px;
+		height: 14px;
+		font-size: 9px;
+	}
+
+
+	.wf_button {
+		width: 80px;
+		height: 22px;
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width: 1388px) {
+	body {
+		font-size: 12px;
+	}
+
+	table {
+		font-size: 12px;
+	}
+
+	.w_Button{
+		width: 93px;
+		height: 28px;
+		font-size: 12px;
+	}
+
+	.d_Button{
+		width: 93px;
+		height: 28px;
+		font-size: 12px;
+	}
+
+	.m_Button{
+		width: 93px;
+		height: 28px;
+		font-size: 12px;
+	}
+
+	.t_Button{
+		width: 120px;
+		height: 25px;
+		font-size: 12px;
+	}
+
+	.xBox, .yBox, .zBox {
+		width: 40px;
+		height: 16px;
+		font-size: 12px;
+	}
+
+
+	.wf_button {
+		width: 90px;
+		height: 25px;
+		font-size: 12px;
+	}
+
+}

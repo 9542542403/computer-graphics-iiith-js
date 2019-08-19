@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
+        <title>Quiz - Rasterization Line</title>
+        <link rel="stylesheet" type="text/css" href="quiz_style.css">
+        <script src="../../Libraries/jQuery.js"></script>
+        <script type="text/javascript" src="quiz_script.js"></script>
+    </head>
+    <body onload="load()">
+        <!-- Quiz header -->
+        <div class="container">
+            <div class="QuizHeader">
+                <div>
+                    <h2 id="TaskTitle">  Quiz : Rasterization Line Experiment - Virtual Labs </h2>
+                    <div id="startBtn">
+                        <button id="startBtn" type="button" class="buttonDecor" onclick="startQuiz()">Start</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instructions">
+                <strong>Instructions:</strong>
+                <ul>
+                    <li> Quiz contains questions on Rasterization Line Experiment </li><br>
+                    <li> Quiz contains 5 questions </li><br>
+                    <li> No negative marks, zero marks are alloted for incorrect answer </li><br>
+                </ul>
+            </div>
+            <div class="quiz-contents">
+                <div>
+                    <!-- Quiz body -->
+                    <div id="quizBody" class="hide"></div>
+                    <div id="submitBtn" style="display: none; text-align: center;">
+                        <button type="button" class="buttonDecor" onclick="submitQuiz()"> Submit </button>
+                    </div>
+                    <!-- Quiz Result -->
+                    <div id="displayResult" class="hide"></div>
+                    <div id="result" style="visibility: hidden;" align="center"></div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

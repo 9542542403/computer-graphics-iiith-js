@@ -1,0 +1,20 @@
+ >> In home page manual provides a detailed explaination about all the buttons and links in the experiment.
+
+ >> Display button opens the perspective projection of bunny by default, it can be changes using the options on the right side of the window.
+
+
+------------------------------------------------------- TEST CASES ----------------------------------------------------------			
+	
+ >> The dropdown provides the options to switch between cameras and views of projections in each page
+
+ >>Click the Camera button and select any of the available camera options among:
+
+ 		>Orthographic camera 
+
+ 		>Perspective camera
+
+ >>The checkboxes can be selected and unselected to display or not to display the XY, YZ or ZX grids respectively.
+
+ Failure:
+
+ On rotation sometimes the display becomes messy, page has to refreshed to view the experiment. 

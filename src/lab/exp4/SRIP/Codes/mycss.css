@@ -1,0 +1,458 @@
+ #sliders {
+        background: none;
+    }
+
+
+body {
+  padding: 0px;
+  border: 0px;
+  background-color: #D3D3D3;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 12px;
+  border-radius: 5px;
+  background: #A3A3A3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 0%;
+  background: #00008b;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 14px;
+  border-radius: 50%;
+  background:#A3A3A3 ;
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+}
+table.tabb {
+  border: 1px solid;
+  text-align: center;
+  border-color: rgba(0, 132, 242, 0.5);
+  margin-top: 2px;
+}
+
+td, tr{
+  padding: 2px 2px 2px 2px;
+  font-weight: bold;
+}
+
+.bigBox {
+  width: 25%;
+  height: 93%;
+  float: right;
+  text-align: center;
+  font-family: Robot, sans-serif;
+  padding: 3px 8px 1px 8px;
+  border: 4px solid #93E84E;
+  margin: 0%;
+  background-color: #F5FFF2;
+}
+
+.smallBox {
+  border: 1px solid red;
+  font-family: Robot, sans-serif;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 6px;
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  background-color: #F5FFF2;
+}
+
+.innerBox {
+  padding: 2px 6px 2px 7px;
+  border: 1px solid gray;
+  font-family: system-ui;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.tbox {
+  width: 60px;
+  height: 30px;
+}
+
+.displayFeatures {
+  resize: both;
+  width: 500px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: 2px solid black;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  color: blue;
+  padding: 10px;
+  text-align: center;
+  background-color: #F5FFF2;
+}
+
+
+
+#canvas-holder {
+    float:left;
+    width: 510px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+
+
+#tools {
+    float:left;
+    background-color:white;
+    border: 1px solid black;
+    margin: 0pt;
+    padding: 8px
+}
+
+#tools h3 {
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+}
+
+#help-content {
+    display: none;
+    position: fixed;
+    left: 1cm;
+    right: 1cm;
+    top: 38px;
+    bottom: 1cm;
+    z-index: 20;
+    max-width: 800px;
+    border: 3px solid #740b0b;
+    color: #740b0b;
+    background-color: #F5F5DC;
+    padding: 8px 15px;
+    overflow: auto;
+    -webkit-user-select: text;
+    -moz-user-select: text; 
+    -ms-user-select: text; 
+    -o-user-select: text;
+    user-select: text;
+}
+
+#help-content p {
+    text-indent: 25px;
+}
+
+#help-icon {
+    position: absolute;
+    top:3px;
+    left:3px;
+    z-index:5
+}
+
+#hide-help-icon {
+    display: none;
+    position: absolute;
+    top:3px;
+    left:3px;
+    z-index:50;
+    display: none
+}
+
+#helpBG {
+    display: none;
+    position: fixed;
+    top: 0pt;
+    left: 0pt;
+    bottom: 0pt;
+    right: 0pt;
+    z-index: 10;
+    background-color: white;
+    opacity: 0.75;
+}
+
+
+#tools p {
+    margin: 2px;
+    padding: 0px;
+    text-indent: 0px;
+}
+
+#box {
+   width: 250px;
+   height: 200px;
+   overflow: auto;
+   margin: 0;
+   padding: 4px;
+   background-color: white;
+   border: thin solid #740b0b;
+  
+}
+.input {
+    margin-top:5px;
+    margin-right:4px;
+    padding: 2px;
+    background-color: white;
+    border: thin solid black;
+    font-size:80%;
+    float: left;
+}
+
+
+
+#renderCanvas {
+                
+            }
+
+
+#canvasholder {
+    float:left;
+   
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+
+#sliders {
+        background: none;
+    }
+
+
+
+
+.sliderx {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderx:hover {
+  opacity: 1;
+}
+
+.sliderx::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderx::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#canvasholder {
+    float:left;
+
+    border: 1px solid black;
+    background-color: white;
+}
+
+canvas {
+    display: block;
+}
+
+.cubebox{
+  height: 50px;
+  width :400px;
+  border: 2px solid black;
+}
+
+div.ex1 {
+  background-color: #D3D3D3;
+  width: 505px;
+  height: 300px;
+  overflow: auto;
+  border: 1px solid grey;
+}
+
+.tabley{
+  width:400px;
+  height:300px;
+  border: 1px solid black;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: auto;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  width:164px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+   padding-left: 520px;
+  border-top: none;
+}
+
+
+/* Style the tab */
+.wrld {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 200px;
+
+
+}
+
+/* Style the buttons inside the tab */
+.wrld button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  width: 200px;
+  border: 1px solid #ccc;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+/* Change background color of buttons on hover */
+.wrld button:hover {
+  background-color: #D3D3D3;
+}
+
+/* Create an active/current "tab button" class */
+.wrld button.active {
+  background-color: #A9A9A9;
+}
+
+/* Style the tab content */
+.wrldcontent {
+  float: left;
+
+  border: 1px solid #ccc;
+  width: 70%;
+
+  border-left: none;
+}
+
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+
+.iframetab{
+  background-color: #ffffff;
+
+}
+.smallsize{
+  font-size: 10px;
+}
+
+.styletitle{
+  color: "red";
+  border:  2px solid grey;
+  padding: 1px 1px;
+}
+
+#contents{
+  border:  2px solid rey;
+  padding: 2px 2px;
+}
+
+
+.tabc {
+    overflow: hidden;
+    border: 1px solid grey;
+    background-color: #f1f1f1;
+    /*width: 140px;*/
+    
+}
+
+/* Style the buttons inside the wrld */
+.tabc button {
+    background-color: inherit;
+    float: left;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    /*width:140px;*/
+
+}
+
+/* Change background color of buttons on hover */
+.tabc button:hover {
+    background-color: #ddd;
+}
+
+.tabc button.active {
+    background-color: #ccc;
+}
+
+/* Style the wrld content */
+.cordcontent {
+    display: none;
+    padding: 6px 12px;
+    width: 100%;
+    border-top: none;
+}

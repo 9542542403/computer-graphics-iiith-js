@@ -1,0 +1,30 @@
+The MAIN HTML File is "home_new.html" file.
+
+We can observe the movement of bunny by moving the screen using arrow keys.
+
+Hold the left mouse button and move the mouse for viewing in different angles.
+
+Hold the right mouse button and move the mouse for sliding on the screen.
+
+Please go through the MANUAL before starting the simulation.
+
+Manual consists of clear description of function of each button in the experiment.
+
+
+---------------------------------------------------------- Details about folders, files and links ----------------------------------------------------------
+
+THE SRIP contains two folders in it, Codes and Libraries.In the "Libraries" folder we have 4 Javascript files required for 3D graphics in Javascript which belong to three.js javascript module.
+
+In the "Codes" folder we have the following:
+
+ >> The main html file is "home_new.html" file
+
+ >> All the CSS files are present in "css" folder
+
+ >> "style.css" file has all the styling for all the html pages
+
+ >> The javascript files are present in the "js" folder
+
+ >> And other htm links are present in "html links" folder.
+
+Read the Manual by clicking on the Manual button provided in the home-page before starting the experiment.
